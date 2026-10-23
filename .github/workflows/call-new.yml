@@ -1,0 +1,10 @@
+# Throwaway caller: uses the NEW name, but checks out code by the OLD name (like code_repository after a rename).
+name: call-new
+on: workflow_dispatch
+jobs:
+  at-main:
+    uses: GarryOne/rename-proof-a-renamed/.github/workflows/hello.yml@main
+    with: {code_repository: GarryOne/rename-proof-a, label: new-name-main}
+  at-tag:
+    uses: GarryOne/rename-proof-a-renamed/.github/workflows/hello.yml@v1
+    with: {code_repository: GarryOne/rename-proof-a, label: new-name-tag}
