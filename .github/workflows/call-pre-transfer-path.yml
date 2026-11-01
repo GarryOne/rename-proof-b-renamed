@@ -1,0 +1,10 @@
+# Throwaway caller for the org-move proof (1 Nov 2026); deleted afterwards.
+name: call-pre-transfer-path
+on: workflow_dispatch
+jobs:
+  at-main:
+    uses: GarryOne/rename-proof-a-renamed/.github/workflows/hello.yml@main
+    with: {code_repository: GarryOne/rename-proof-a-renamed, label: call-pre-transfer-path-main}
+  at-tag:
+    uses: GarryOne/rename-proof-a-renamed/.github/workflows/hello.yml@v1
+    with: {code_repository: GarryOne/rename-proof-a-renamed, label: call-pre-transfer-path-tag}
