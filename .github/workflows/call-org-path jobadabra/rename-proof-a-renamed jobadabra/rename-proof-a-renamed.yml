@@ -1,0 +1,10 @@
+# Throwaway caller for the org-move proof (1 Nov 2026); deleted afterwards.
+name: call-org-path jobadabra/rename-proof-a-renamed jobadabra/rename-proof-a-renamed
+on: workflow_dispatch
+jobs:
+  at-main:
+    uses: /.github/workflows/hello.yml@main
+    with: {code_repository: , label: call-org-path jobadabra/rename-proof-a-renamed jobadabra/rename-proof-a-renamed-main}
+  at-tag:
+    uses: /.github/workflows/hello.yml@v1
+    with: {code_repository: , label: call-org-path jobadabra/rename-proof-a-renamed jobadabra/rename-proof-a-renamed-tag}
